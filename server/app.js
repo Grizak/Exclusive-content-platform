@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 // Routes Import
-app.use('/auth', require('./routes/authRoutes'))
+app.use('/auth', require('./routes/authRoutes'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
