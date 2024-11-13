@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <header>
-    <%- include('../partials/header') %>
-  </header>
+  <% if (header) { %>
+    <header>
+      <%- include('../partials/header') %>
+    </header>
+  <% } %>
 
   <main>
     <%- body %>
